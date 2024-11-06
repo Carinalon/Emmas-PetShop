@@ -1,0 +1,21 @@
+
+body{
+    margin: 0;
+    padding: 0; 
+      
+}
+
+.contenedor-header{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.logo{
+    width: 8%;
+    border-radius: 50%;
+}
