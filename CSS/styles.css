@@ -1,8 +1,14 @@
+:root{
+    --body-font: 'Chilanka', cursive;
+    --heading-font: 'Chilanka', cursive;
 
+}
 body{
     margin: 0;
     padding: 0; 
-      
+    box-sizing: border-box;
+    --bs-font-sans-serif: 'Chilanka', cursive;
+    --bs-body-font-family: var(--bs-font-sans-serif);     
 }
 
 .contenedor-header{
@@ -12,7 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: auto;
-    background-color: antiquewhite;
+    background-color: #dbdbdb;
 }
 
 .logo{
@@ -20,28 +26,84 @@ body{
     
 }
 .banner{
-    background-color: bisque;
+    background-color: #fffcf8;
+    border-radius: 50%;
     display: flex;
-    align-items: center;
     padding: 20px;
     margin: 40px;
+    box-shadow: 5px 3px 15px #bba181;
 
     img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;  
+        width: 276px;
+        height: 346px;
     }
     h1{
-        margin-bottom: 50%;
+        font-size: 40px;
+        font-style: italic;
+        font-family:'chilanka';
+        text-align: end;
+   
+    }
+    h2{
+        font-size: 40px;
+        font-style: italic;
+        font-family:'chilanka';
         text-align: center;
+        margin-top: 15%;
+    }
+  
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;   
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+   
+    img{
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        max-width: 100%;
     }
 }
 
-.card{
+.producto{
+    background-color: #6995B1;
+}
+.comida{
+    background-color: #DEAD6F;
+}
+h3{
+    font-family:'chilanka';
+    text-align: center;
+    font-size: 30px;
+}
+
+footer{
+    background-color: #dbdbdb;
     display: flex;
-    background-color: cadetblue;
-    h3{
-        text-align: center;
+
+    .contacto-titulo, h4{
+        font-family:'chilanka';
     }
-    
+
+}
+/*body{
+  --accent-color: #DEAD6F;
+  --dark-color: #222222;
+  --light-dark-color: #727272;
+  --light-color: #fff;
+  --grey-color: #dbdbdb;
+  --light-grey-color: #fafafa;
+  --primary-color: #6995B1;
+  --light-primary-color: #eef1f3;
 }
