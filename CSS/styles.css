@@ -17,5 +17,31 @@ body{
 
 .logo{
     width: 8%;
-    border-radius: 50%;
+    
+}
+.banner{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;  
+    }
+    h1{
+        margin-bottom: 50%;
+        text-align: center;
+    }
+}
+
+.card{
+    display: flex;
+    background-color: cadetblue;
+    h3{
+        text-align: center;
+    }
+    
 }
