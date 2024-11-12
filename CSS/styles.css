@@ -65,9 +65,8 @@ body{
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     border-radius: 15px;
     margin-bottom: 50px;
    
@@ -75,15 +74,6 @@ body{
         border-radius: 15px 15px 0 0;
         object-fit: cover;
         max-width: 100%;
-    }
-}
-
-
-.card-about{
-    display: grid;
-    
-    img{
-        height: 350px;
     }
 }
 
@@ -96,49 +86,76 @@ p .desc{
 }
 .comida{
     background-color: #DEAD6F;
+   
 }
-h3{
+.card-about{
+    display: grid;
+    
+    img{
+        height: 350px;
+    }
+}
+/*reseñas */
+.container-resenas{
+    display: flex;
+    flex-direction: column;
+
+  
+}
+/*ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*reseñas */
+
+h3, .titulo-reseñas{
     font-family:'chilanka';
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     background-color:#e6e6e66b ;
     padding: 10px;
 }
 
 footer{
-    background-color: #dbdbdb;
-
-    .contacto-titulo, h4{
-        font-family:'chilanka';
-        font-size: 1.5em;
-    }
-}
-
-.form-container{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     align-items: center;
+    gap: 25px;
     background-image:url(/img/Fondo-contacto.png);
 }
-
-form{
-    width: 45vh;
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;  
 }
 
-input {
-	border-radius: 20px;
-    border: 3px solid #e6e6e66b;
-    padding: 10px;
-    width: 100%;  
+.contacto-titulo, h4{
+    font-family:'chilanka';
+    font-size: 1.5em;
 }
 .texto_mensaje{
     border: none;
     padding: 10px;
     margin: 30px;
-    width: 100%; 
+    width: 80%; 
 }
+button{
+    width: 150px;
+    align-self: center;
+    background-color: #e6e6e66b;
+    border-radius: 8px ;
+    border: 1px solid #aaa8a86b;
+    margin-bottom: 8%;
+
+}
+
+
+
 
 /*body{
   --accent-color: #DEAD6F;
