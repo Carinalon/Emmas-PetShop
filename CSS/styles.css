@@ -139,14 +139,7 @@ input {
     margin: 30px;
     width: 100%; 
 }
-.button-submit{
-    background-color: #DEAD6F;
-    color: #ffffff;
-    padding: 10px 5px;
-    border-radius: 8px;
-    width: 150px;
 
-}
 /*body{
   --accent-color: #DEAD6F;
   --dark-color: #222222;
