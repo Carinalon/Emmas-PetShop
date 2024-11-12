@@ -82,8 +82,6 @@ body{
 .card-about{
     display: grid;
     
-
-
     img{
         height: 350px;
     }
@@ -109,11 +107,44 @@ h3{
 
 footer{
     background-color: #dbdbdb;
-    display: flex;
 
     .contacto-titulo, h4{
         font-family:'chilanka';
+        font-size: 1.5em;
     }
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    background-image:url(/img/Fondo-contacto.png);
+}
+
+form{
+    width: 45vh;
+}
+
+input {
+	border-radius: 20px;
+    border: 3px solid #e6e6e66b;
+    padding: 10px;
+    width: 100%;  
+}
+.texto_mensaje{
+    border: none;
+    padding: 10px;
+    margin: 30px;
+    width: 100%; 
+}
+.button-submit{
+    background-color: #DEAD6F;
+    color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 8px;
+    width: 150px;
 
 }
 /*body{
