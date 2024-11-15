@@ -37,20 +37,23 @@ body{
     
 }
 .banner{
-    width: 100%;
     display: flex;
     text-align: center;
     padding: 20px;
     margin: 50px;
+    background-image:url(/img/Fondo-contacto.png);
+    
     
     img{
-        width: 276px;
-        height: 346px;
+        width: 20vw;
+        max-height: max-content;
+    
     }
     h1{
         font-size: 40px;
         font-style: italic;
         font-family:'chilanka';
+        color: #504a4a ;
         
     }
   
@@ -91,18 +94,25 @@ p .desc{
 .card-about{
     display: grid;
     
-    img{
-        height: 350px;
-    }
+   
+    
+   img{
+    width: 350px;
+   }
+   p{
+    margin: 20px 40px;
+    text-align: center;
+   }
 }
 /*reseñas */
-.container-resenas{
+.container-reseñas{
     display: flex;
-    flex-direction: column;
-
-  
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px;
 }
-/*ul, li{
+
+ul, li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -110,7 +120,7 @@ p .desc{
 
 /*reseñas */
 
-h3, .titulo-reseñas{
+h3, h2, .titulo-reseñas{
     font-family:'chilanka';
     text-align: center;
     font-size: 25px;
