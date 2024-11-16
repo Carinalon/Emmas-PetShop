@@ -45,7 +45,7 @@ body{
     
     
     img{
-        width: 20vw;
+        width: 30vw;
         max-height: max-content;
     
     }
@@ -70,55 +70,73 @@ body{
 .card {
     display: grid;
     justify-items: center;
+    border: 1px #aaa8a86b solid;
     border-radius: 15px;
-    margin-bottom: 50px;
-   
+    margin: 30px;
+  
     img{
         border-radius: 15px 15px 0 0;
         object-fit: cover;
         max-width: 100%;
     }
+    .desc{
+        font-size: 25px;
+    }
+    .precio{
+        font-size: 20px;
+        align-self: flex-end;
+    }
+}
+.btn-carrrito{
+    background-color: #aaa8a86b;
+    color: #222222;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    margin-bottom: 15px; 
 }
 
-.producto{
-    background-color: #6995B1;
+.btn-carrrito:hover{
+    background-color: #504a4a ;
+    color: white;
 }
 
-p .desc{
-    text-align:start ;
-}
-.comida{
-    background-color: #DEAD6F;
-   
-}
-.card-about{
-    display: grid;
-    
-   
-    
-   img{
+.about{
+    display: flex;
+
+  img{
     width: 350px;
    }
    p{
     margin: 20px 40px;
     text-align: center;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: "chilanka";  
    }
-}
-/*reseñas */
-.container-reseñas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 20px;
+   h2{
+    width: 100%;
+   }
 }
 
 ul, li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+   list-style: none;
 }
 
 /*reseñas */
+.container-reseñas{
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin: 10px 20px;
+}
+.texto{
+    width: 50%;
+    text-align: center;
+    font-family: "chilanka";
+    font-size: 22px;
+
+}
 
 h3, h2, .titulo-reseñas{
     font-family:'chilanka';
@@ -127,7 +145,7 @@ h3, h2, .titulo-reseñas{
     background-color:#e6e6e66b ;
     padding: 10px;
 }
-
+/*Footer y form*/
 footer{
     width: 100%;
     display: flex;
@@ -141,7 +159,7 @@ input {
     border: none;
     padding: 10px;
     margin: 10px;
-    width: 80%;  
+    width: 70%;  
 }
 
 .contacto-titulo, h4{
@@ -164,16 +182,57 @@ button{
 
 }
 
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80px;
+    }
+    .about p{
+        font-size: 15px; 
+    }
+    .container-reseñas{
+        .texto{
+        font-size: 18px;
+      }
+    }
+ 
+}
 
 
+@media (max-width: 430px) {
+    .logo{
+        max-width: 100%;
 
-/*body{
-  --accent-color: #DEAD6F;
-  --dark-color: #222222;
-  --light-dark-color: #727272;
-  --light-color: #fff;
-  --grey-color: #dbdbdb;
-  --light-grey-color: #fafafa;
-  --primary-color: #6995B1;
-  --light-primary-color: #eef1f3;
+    }
+    
+    .about p{
+        font-size: 22px; 
+    }
+    .contenedor-header {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        align-content: center;
+
+    } 
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner img{
+        width: 230px;
+        max-height: max-content;
+    }
+     .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 60%;
+
+    }
+    .form h4{
+        font-size: 1em;
+
+    }
+
 }
