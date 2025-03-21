@@ -38,25 +38,39 @@ body{
 }
 .banner{
     display: flex;
-    text-align: center;
+    flex-direction: row; /* Cambiado a "row" para que los elementos estén uno al lado del otro */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around; /* Espaciar los elementos de forma equilibrada */
     padding: 20px;
     margin: 50px;
     background-image:url(/img/Fondo-contacto.png);
-    
-    
-    img{
+}   
+.banner img {
         width: 30vw;
-        max-height: max-content;
-    
-    }
-    h1{
-        font-size: 40px;
-        font-style: italic;
-        font-family:'chilanka';
-        color: #504a4a ;
+        max-height: auto; /* Ajusta la altura proporcionalmente */
+        margin-right: 20px; /* Añade espacio entre la imagen y el texto */
+}
+.banner__contenido {
+    display: flex;
+    flex-direction: column; /* Apila el título (h1) y el párrafo */
+    align-items: center; /* Alinea horizontalmente los elementos */
+    max-width: 50%; /* Limita el ancho para un diseño más limpio */
+}
+.banner__titulo {
+    text-align: center; /* Alinea el encabezado a la izquierda */
+    font-size: 4rem;
+    font-style: italic;
+    font-family: 'chilanka';
+    color: #504a4a;
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    color: #504a4a ;
         
-    }
-  
+}
+.banner__parrafo {
+        font-size: 40px;
+        font-family: 'chilanka';
+        text-align: center; /* Cambiado a "left" para mejorar la alineación con la imagen */
+        max-width: 50%; /* Limita el ancho del párrafo para un diseño más limpio */
 }
 
 .contenedor{
@@ -194,6 +208,12 @@ button{
         font-size: 18px;
       }
     }
+    .banner__titulo{
+        font-size: 3rem;
+    }
+    .banner__parrafo {
+        font-size: 30px;
+    }
  
 }
 
@@ -201,7 +221,6 @@ button{
 @media (max-width: 430px) {
     .logo{
         max-width: 100%;
-
     }
     
     .about p{
@@ -212,17 +231,15 @@ button{
         flex-direction: column;
         font-size: 15px;
         align-content: center;
+   } 
 
-    } 
-    .banner{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner img{
-        width: 230px;
-        max-height: max-content;
-    }
+    .banner__titulo{
+        font-size: 2rem;
+      }
+    .banner__parrafo {
+            font-size: 20px;
+            max-width: 80%;}
+   
      .form{
         display: flex;
         flex-direction: column;
